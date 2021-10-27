@@ -30,7 +30,7 @@ struct ContentView: View {
             changeColor()
         }
         .font(.system(size: 35))
-        .frame(width: 200, height: 60)
+        .frame(width: 180, height: 60)
         .foregroundColor(.white)
         .background(Color.blue)
         .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 5))

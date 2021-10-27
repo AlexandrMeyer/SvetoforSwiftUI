@@ -53,10 +53,9 @@
 		B53815382727F08E006FFCC6 /* SvetoforSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				B53815392727F08E006FFCC6 /* SvetoforSwiftUIApp.swift */,
-				B538153B2727F08E006FFCC6 /* ContentView.swift */,
-				B538154927283DC6006FFCC6 /* SetColor.swift */,
-				B538153D2727F092006FFCC6 /* Assets.xcassets */,
+				B538154C2729524C006FFCC6 /* App */,
+				B538154B27295238006FFCC6 /* Views */,
+				B538154D2729527C006FFCC6 /* Resources */,
 				B538153F2727F092006FFCC6 /* Preview Content */,
 			);
 			path = SvetoforSwiftUI;
@@ -68,6 +67,31 @@
 				B53815402727F092006FFCC6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B538154B27295238006FFCC6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B538153B2727F08E006FFCC6 /* ContentView.swift */,
+				B538154927283DC6006FFCC6 /* SetColor.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B538154C2729524C006FFCC6 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B53815392727F08E006FFCC6 /* SvetoforSwiftUIApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		B538154D2729527C006FFCC6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B538153D2727F092006FFCC6 /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

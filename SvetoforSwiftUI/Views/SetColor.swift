@@ -14,7 +14,7 @@ struct SetColor: View {
     var body: some View {
             Circle()
             .foregroundColor(color).opacity(isActive ? 1 : 0.3)
-                .frame(width: 140, height: 140)
+                .frame(width: 120, height: 120)
                 .overlay(Circle().stroke(Color.white, lineWidth: 5))
                 .padding(6)
     }
