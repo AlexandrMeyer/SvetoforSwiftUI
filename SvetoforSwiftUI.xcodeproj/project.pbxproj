@@ -11,6 +11,7 @@
 		B538153C2727F08E006FFCC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538153B2727F08E006FFCC6 /* ContentView.swift */; };
 		B538153E2727F092006FFCC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B538153D2727F092006FFCC6 /* Assets.xcassets */; };
 		B53815412727F092006FFCC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53815402727F092006FFCC6 /* Preview Assets.xcassets */; };
+		B538154A27283DC6006FFCC6 /* SetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538154927283DC6006FFCC6 /* SetColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		B538153B2727F08E006FFCC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B538153D2727F092006FFCC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53815402727F092006FFCC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B538154927283DC6006FFCC6 /* SetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			children = (
 				B53815392727F08E006FFCC6 /* SvetoforSwiftUIApp.swift */,
 				B538153B2727F08E006FFCC6 /* ContentView.swift */,
+				B538154927283DC6006FFCC6 /* SetColor.swift */,
 				B538153D2727F092006FFCC6 /* Assets.xcassets */,
 				B538153F2727F092006FFCC6 /* Preview Content */,
 			);
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B538154A27283DC6006FFCC6 /* SetColor.swift in Sources */,
 				B538153C2727F08E006FFCC6 /* ContentView.swift in Sources */,
 				B538153A2727F08E006FFCC6 /* SvetoforSwiftUIApp.swift in Sources */,
 			);
@@ -277,7 +281,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +311,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
