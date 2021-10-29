@@ -7,48 +7,61 @@
 
 import SwiftUI
 
+enum CurrentLight {
+    case red, yellow, green
+}
+
 struct ContentView: View {
-    @State private var isActive: [Bool] = [false, false, false]
-    @State private var count = 0
     
+    @State private var buttonTitle = "START"
+    @State private var currentLight = CurrentLight.red
+    
+    @State private var redlights = 0.3
+    @State private var yellowlights = 0.3
+    @State private var greenlights = 0.3
+    
+    private func changeColor() {
+        
+        let lightIsOn = 1.0
+        let lightIsOff = 0.3
+        
+        switch currentLight {
+        case .red:
+            redlights = lightIsOn
+            greenlights = lightIsOff
+            currentLight = .yellow
+        case .yellow:
+            redlights = lightIsOff
+            yellowlights = lightIsOn
+            currentLight = .green
+        case .green:
+            yellowlights = lightIsOff
+            greenlights = lightIsOn
+            currentLight = .red
+        }
+    }
+}
+
+extension ContentView {
     var body: some View {
         ZStack {
             Color.black
                 .ignoresSafeArea()
             VStack {
-                SetColor(color: .red, isActive: isActive[0])
-                SetColor(color: .yellow, isActive: isActive[1])
-                SetColor(color: .green, isActive: isActive[2])
+                ColorCircleView(color: .red, opacity: redlights)
+                ColorCircleView(color: .yellow, opacity: yellowlights)
+                ColorCircleView(color: .green, opacity: greenlights)
+                
                 Spacer()
-                setButton
+                
+                ButtonView(title: buttonTitle) {
+                    if buttonTitle == "START" {
+                        buttonTitle = "NEXT"
+                    }
+                    changeColor()
+                }
             }
-        }
-    }
-    
-    private var setButton: some View {
-        Button(count == 0 ? "Start" : "Next") {
-            changeColor()
-        }
-        .font(.system(size: 35))
-        .frame(width: 180, height: 60)
-        .foregroundColor(.white)
-        .background(Color.blue)
-        .overlay(RoundedRectangle(cornerRadius: 20).stroke(Color.white, lineWidth: 5))
-        .cornerRadius(20)
-        .padding()
-    }
-    
-    private func changeColor() {
-        count += 1
-        if count % 3 == 1 {
-            isActive[0].toggle()
-            isActive[2] = false
-        } else if count % 3 == 2 {
-            isActive[0].toggle()
-            isActive[1].toggle()
-        } else {
-            isActive[1].toggle()
-            isActive[2].toggle()
+            .padding()
         }
     }
 }
@@ -58,3 +71,5 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+
+

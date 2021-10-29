@@ -11,7 +11,8 @@
 		B538153C2727F08E006FFCC6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538153B2727F08E006FFCC6 /* ContentView.swift */; };
 		B538153E2727F092006FFCC6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B538153D2727F092006FFCC6 /* Assets.xcassets */; };
 		B53815412727F092006FFCC6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B53815402727F092006FFCC6 /* Preview Assets.xcassets */; };
-		B538154A27283DC6006FFCC6 /* SetColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538154927283DC6006FFCC6 /* SetColor.swift */; };
+		B538154A27283DC6006FFCC6 /* ColorCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538154927283DC6006FFCC6 /* ColorCircleView.swift */; };
+		B538154F27296D00006FFCC6 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B538154E27296D00006FFCC6 /* ButtonView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,7 +21,8 @@
 		B538153B2727F08E006FFCC6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B538153D2727F092006FFCC6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B53815402727F092006FFCC6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B538154927283DC6006FFCC6 /* SetColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetColor.swift; sourceTree = "<group>"; };
+		B538154927283DC6006FFCC6 /* ColorCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorCircleView.swift; sourceTree = "<group>"; };
+		B538154E27296D00006FFCC6 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +75,8 @@
 			isa = PBXGroup;
 			children = (
 				B538153B2727F08E006FFCC6 /* ContentView.swift */,
-				B538154927283DC6006FFCC6 /* SetColor.swift */,
+				B538154927283DC6006FFCC6 /* ColorCircleView.swift */,
+				B538154E27296D00006FFCC6 /* ButtonView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,8 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B538154A27283DC6006FFCC6 /* SetColor.swift in Sources */,
+				B538154A27283DC6006FFCC6 /* ColorCircleView.swift in Sources */,
 				B538153C2727F08E006FFCC6 /* ContentView.swift in Sources */,
+				B538154F27296D00006FFCC6 /* ButtonView.swift in Sources */,
 				B538153A2727F08E006FFCC6 /* SvetoforSwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
